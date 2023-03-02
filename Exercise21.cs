@@ -1,0 +1,26 @@
+﻿// 21. Напишите программу, котороя принимает вход координаты двух точек и находит расстояние между ними в 3D пространстве
+System.Console.WriteLine("Введите координаты первой точки: ");
+System.Console.WriteLine("Введите координату X для первой точки: ");
+double xA = Convert.ToDouble(Console.ReadLine());
+System.Console.WriteLine("Введите координату Y для первой точки: ");
+double yA = Convert.ToDouble(Console.ReadLine());
+System.Console.WriteLine("Введите координату Z для первой точки: ");
+double zA = Convert.ToDouble(Console.ReadLine());
+System.Console.WriteLine("Введите координаты второй точки: ");
+System.Console.WriteLine("Введите координату X для второй точки: ");
+double xB = Convert.ToDouble(Console.ReadLine());
+System.Console.WriteLine("Введите координату Y для второй точки: ");
+double yB = Convert.ToDouble(Console.ReadLine());
+System.Console.WriteLine("Введите координату Z для второй точки: ");
+double zB = Convert.ToDouble(Console.ReadLine());
+double power = Convert.ToDouble(2);
+double diffX = (xB - xA);
+double sndX= Math.Pow(diffX, power);
+double diffY = (yB - yA);
+double sndY = Math.Pow(diffY, power);
+double diffZ = (zB - zA);
+double sndZ = Math.Pow(diffZ, power);
+double summAll = sndX + sndY + sndZ;
+double distance = Math.Sqrt(summAll);
+System.Console.WriteLine("Расстояние между этими двумя точками равно: ");
+Console.WriteLine(distance);
